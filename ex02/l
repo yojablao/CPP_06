@@ -1,0 +1,28 @@
+#ifndef A_HPP
+#define A_HPP
+
+#include "Base.hpp"
+
+class A:public Base
+{
+    public:
+        ~A();
+};
+#endif#ifndef C_HPP
+#define C_HPP
+#include "Base.hpp"
+class Base;
+class C:public Base
+{
+    public:
+        ~C() {};
+};
+#endif#ifndef B_HPP
+#define B_HPP
+#include "Base.hpp"
+class B:public Base
+{
+    public:
+        ~B();
+};
+#endif

@@ -1,10 +1,10 @@
-name  = test
+name  = day
 
-src = main.cpp  Serializer.cpp 
-head = Serializer.hpp Data.hpp
+src = main.cpp   Base.cpp A.cpp B.cpp C.cpp
+head = Base.hpp  A.hpp  B.hpp  C.hpp
 obj = $(src:.cpp=.o)
 
-CC = c++ -Wall -Wextra -Werror -std=c++98 -g -fsanitize=address
+CC = c++ -Wall -Wextra -Werror -std=c++98 
 .o :$(head) .cpp 
 	$(CC) $< -c -o $@
 
